@@ -32,10 +32,6 @@ The app records patient speech, transcribes it using Whisper, detects the spoken
 Mobile App → Backend/API Layer → OpenAI APIs  
 Mobile App → Supabase → Auth and Chat History
 
-## Screenshots
-
-Add screenshots here.
-
 ## Security Note
 
 OpenAI requests should be routed through a backend service. API keys should not be stored in the mobile client.
