@@ -60,7 +60,7 @@ export default function TranslatingChat({ navigation }) {
 
 
   
-  const API_KEY = "sk-3ij57lTFnFTUJ_Ky71Dau7BZPOmUwLvwoGNyXbbXI5T3BlbkFJ7JQl-PavfTiTT823UmB2C34z18iryrquwE9t_f3RAA"
+  const API_KEY = ""
 
 //   useFocusEffect(
 //   React.useCallback(() => {
