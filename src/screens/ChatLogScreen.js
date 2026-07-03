@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, FlatList, StyleSheet } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import { supabase } from './supabaseClient';
+import { supabase } from '../services/supabaseClient';
 
 const ChatLogScreen = ({ route }) => {
   const { sessionId } = route.params;

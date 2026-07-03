@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, FlatList, TouchableOpacity, StyleSheet } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from '@expo/vector-icons';
-import { supabase } from './supabaseClient';
+import { supabase } from '../services/supabaseClient';
 
 const ChatSessionsScreen = ({ navigation }) => {
   const [chatSessions, setChatSessions] = useState([]);

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert, Image, StatusBar, SafeAreaView, ScrollView   } from 'react-native';
-import { supabase } from './supabaseClient';
+import { supabase } from '../services/supabaseClient';
 
 const Login = ({ navigation }) => {
   const [email, setEmail] = useState('');
@@ -43,7 +43,7 @@ const Login = ({ navigation }) => {
         <Text style={styles.subtitle}>Where language becomes a tool</Text>
         <View style={styles.imageContainer}>
           <Image 
-            source={require('./assets/doc.png')}
+            source={require('../../assets/doc.png')}
             style={styles.doctorImage}
           />
         </View>

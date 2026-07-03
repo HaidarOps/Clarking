@@ -3,17 +3,17 @@ import { TouchableOpacity, Text, View, StyleSheet, Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/stack';
 import { Ionicons } from '@expo/vector-icons';
-import { supabase } from './supabaseClient';
+import { supabase } from './src/services/supabaseClient';
 import * as NavigationBar from 'expo-navigation-bar';
-import Login from './Login';
-import ChatSessionsScreen from './chatSessions';
-import TranslatingChat from './TranslatingChat';
-import ChatLogScreen from './ChatLogScreen';
-import RecordingResults from './RecordingResults.js';
-import DisplayGeneratedQuestions from './DisplayGeneratedQuestions';
-import NewChatBotSystem from './NewChatBotSystem';
-import OwnQuestions from './OwnQuestions';
-import FreeStyle from './FreeStyle';
+import Login from './src/screens/Login';
+import ChatSessionsScreen from './src/screens/ChatSessionsScreen';
+import TranslatingChat from './src/screens/TranslatingChat';
+import ChatLogScreen from './src/screens/ChatLogScreen';
+import RecordingResults from './src/screens/RecordingResults.js';
+import DisplayGeneratedQuestions from './src/screens/DisplayGeneratedQuestions';
+import NewChatBotSystem from './src/screens/NewChatBotSystem';
+import OwnQuestions from './src/screens/OwnQuestions';
+import FreeStyle from './src/screens/FreeStyle';
 
 
 

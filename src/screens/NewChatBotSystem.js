@@ -5,7 +5,7 @@ import { Audio } from 'expo-av';
 import axios from 'axios';
 import { Buffer } from 'buffer';
 import * as FileSystem from 'expo-file-system';
-import { createChatSession, saveChatMessage, getChatMessages } from './supabaseClient';
+import { createChatSession, saveChatMessage, getChatMessages } from '../services/supabaseClient';
 import { Ionicons } from '@expo/vector-icons';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 
@@ -372,7 +372,7 @@ const summarize_convo = async () => {
             <View key={index} style={[styles.messageBubble, message.sender === 'bot' ? styles.botMessage : styles.userMessage]}>
               {message.sender === 'bot' && (
                 <View style={styles.botIconContainer}>
-                  <Image source={require('./assets/doctor-male.png')} style={styles.botIcon} />
+                  <Image source={require('../../assets/doctor-male.png')} style={styles.botIcon} />
                   <TouchableOpacity onPress={replay}>
                     <MaterialIcons name="replay" size={24} color="black" />
                   </TouchableOpacity>
@@ -386,7 +386,7 @@ const summarize_convo = async () => {
               </View>
               {message.sender === 'user' && (
                 <View style={styles.userIconContainer}>
-                  <Image source={require('./assets/person.png')} style={styles.userIcon} />
+                  <Image source={require('../../assets/person.png')} style={styles.userIcon} />
                 </View>
               )}
             </View>

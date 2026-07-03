@@ -127,7 +127,7 @@ const DisplayGeneratedQuestions = ({ route, navigation }) => {
         </Text>
 
         <View style={styles.questionsContainer}>
-          <Image source={require('./assets/Group.png')} style={styles.newProjectImage} />
+          <Image source={require('../../assets/Group.png')} style={styles.newProjectImage} />
           <ScrollView style={styles.questionsList}>
             {isLoading ? (
               <Text style={styles.loadingText}>Generating questions...</Text>
